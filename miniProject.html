@@ -10,28 +10,56 @@
             margin: 0;
             padding: 0;
             text-align: justify;
-      
+            background-color: #1a1919;
+            font-family: Verdana, sans-serif; /* Use Verdana font with a fallback to sans-serif */
+            font-size: 18px;
             
         }
         h2{
             text-align: center;
         }
+        p{
+            line-height: 1.5;
+        }
         .content {
         width: 80%;
         max-width: 800px;
-        background-color: #f9f9f9;
+        background-color: #757575;
         padding: 20px;
         border-radius: 20%;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         margin: 0 auto; /* Center the content horizontally */
         max-width: 800px;
        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+       header {
+        background-color: #fff; /* White background color */
+        color: #333; /* Dark text color */
+        padding: 20px; /* Padding around the text */
+        text-align: center; /* Center align the text */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+        position: relative; /* Relative positioning for absolute elements */
+    }
+
+    /* Add a gradient animation for the background */
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    header {
+        background: linear-gradient(270deg, #64B5F6, #6e7ae9, #633bf3); /* Gradient background */
+        background-size: 600% 600%; /* Background size for animation */
+        animation: gradient 10s ease infinite; /* Animation properties */
+    }
+
+    /* Add a hover effect for the header */
+    header:hover {
+        transform: scale(1.05); /* Scale the header on hover */
+        transition: transform 0.5s ease; /* Transition effect */
+    }
+
+        
         nav {
             background-color: #f4f4f4;
             padding: 10px;
@@ -44,7 +72,9 @@
         }
         section {
             padding: 20px;
-            padding: 20px 40%;
+            padding: 20px 35%;
+            color: #b9b9b9;
+            
         }
         footer {
             background-color: #333;
@@ -55,19 +85,23 @@
             bottom: 0;
             width: 100%;
         }
-        img {
- 
-        width: 400px; /* Set a specific width for all images */
-        height: 400px; /* Set a specific height for all images */
-        object-fit: contain; /* Ensure images maintain their aspect ratio and cover the specified dimensions */
-    }
+            img {
+    
+            width: 100%; /* Set a specific width for all images */
+            height: 100%; /* Set a specific height for all images */
+            object-fit: contain; /* Ensure images maintain their aspect ratio and cover the specified dimensions */
+        }
+   
+
 
     </style>
 </head>
 <body>
 
 <header>
-    <h1>User Benchmark</h1>
+    <h1>
+        Sunior Workbench
+    </h1>
 </header>
 
 <!--Introduction -->
