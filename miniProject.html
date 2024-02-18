@@ -9,13 +9,57 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: justify;
+            background-color: #1a1919;
+            font-family: Verdana, sans-serif; /* Use Verdana font with a fallback to sans-serif */
+            font-size: 18px;
+            
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+        h2{
             text-align: center;
         }
+        p{
+            line-height: 1.5;
+        }
+        .content {
+        width: 80%;
+        max-width: 800px;
+        background-color: #757575;
+        padding: 20px;
+        border-radius: 20%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin: 0 auto; /* Center the content horizontally */
+        max-width: 800px;
+       }
+       header {
+        background-color: #fff; /* White background color */
+        color: #333; /* Dark text color */
+        padding: 20px; /* Padding around the text */
+        text-align: center; /* Center align the text */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+        position: relative; /* Relative positioning for absolute elements */
+    }
+
+    /* Add a gradient animation for the background */
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    header {
+        background: linear-gradient(270deg, #64B5F6, #6e7ae9, #633bf3); /* Gradient background */
+        background-size: 600% 600%; /* Background size for animation */
+        animation: gradient 10s ease infinite; /* Animation properties */
+    }
+
+    /* Add a hover effect for the header */
+    header:hover {
+        transform: scale(1.05); /* Scale the header on hover */
+        transition: transform 0.5s ease; /* Transition effect */
+    }
+
+        
         nav {
             background-color: #f4f4f4;
             padding: 10px;
@@ -28,6 +72,9 @@
         }
         section {
             padding: 20px;
+            padding: 20px 35%;
+            color: #b9b9b9;
+            
         }
         footer {
             background-color: #333;
@@ -38,12 +85,21 @@
             bottom: 0;
             width: 100%;
         }
+            img {
+    
+            width: 100%; /* Set a specific width for all images */
+            height: 120%; /* Set a specific height for all images */
+            object-fit: contain; /* Ensure images maintain their aspect ratio and cover the specified dimensions */
+        }
+        
     </style>
 </head>
 <body>
 
 <header>
-    <h1>User Benchmark</h1>
+    <h1>
+        Senior Workbench
+    </h1>
 </header>
 
 <!--Introduction -->
@@ -74,60 +130,100 @@
 </section>
 <!--Research -->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+    <h2>Research</h2>
+    <h3>Survey:</h3>
+    <p>In order to develop a better understanding of our end-user, we conducted a survey that focuses on brain-training in the elderly community. Our goal was to find out how the decline in cognitive capability due to old age affects the seniorly in their day-to-day life. We also wanted to find out how often they use brain training exercises to counter the deterioration of their cognitive functions. This research will give us key insights on their habits and find a way to improve their mental aptitude.
+
+        A total of 10 participants responded to the survey aging from 60 to 80 years old. From the results gathered, we noticed that 80% of them do not use any brain training activities and considered that their memorization capabilites were low. 
+        Furthermore, 90% of the participants agreed that the maintenance of our cognitive functionalities as we grow older becomes more and more important.
+    </p>
+
+    <img src="/image/piechart1.png">
+    <img src="/image/piechart2.png">
+    <img src="/image/piechart3.png">
+    <h3>Quotes from participants:</h3>
+    <p>"As I grow older, I worry that I won't be able to hold a proper conversation with my loved ones."<br><br>
+        "I feel like there aren't many cognitive games tailored for the elderly. The ones I come accross are usually too difficult for me to play"<br><br>
+        "Ever since I have started brain training exercises, my daily activities have significantly been enhanced, making them more enjoyable and manageable."<br><br>
+    </p>
+    <p>
+        With the help of this collection of information, we now have a better grasp of our end-user’s needs and may design our application accordingly. 
+        </p>
+</section>
 </section>
 <!--Personas-->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+ 
+    <h2>Personas</h2>
+    <!-- Persona 1 -->
+    <img src="/image/unnamed.png">
+    <!-- Persona 2 -->
+    <img src="/image/unnamed (1).png">
+
 </section>
 <!--User Goals-->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+    <h2>User Goals</h2>
+    <h3>Lisa Luv’s Goals:</h3>
+    <p>The creation of Lisa’s persona made it clear that her goal is to maintain a healthy cognitive mind by regularly doing brain exercises to train it. She often finds herself losing focus or unable to think properly due to her age and health rapidly declining as she gets older. She would rather have a stable mental state so that she can remember to take her medication and be able to play games with her family that require a lot of thinking.
+    </p>
+    <h3>Robert Fit’s Goals:
+    </h3>
+    <p>The creation of Robert’s persona made it clear that his goal is to spend less time at home doing nothing. He does not spend much time outside due to his weak legs and finds himself either watching the news or reading books. As his routine becomes repetitive, he wishes to find another way to occupy himself with the goal of training his mental aptitude and maintaining mind wellness.
+    </p>
 </section>
-<!--Design Process-->
+<!-- Design Process -->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+    <h2>Design Process</h2>
+    <h3>User Journey</h3>
+    <p>The following user journey mapping describes Lisa’s thought process and actions while using the mobile application. It also provides the expected behavior of the application at each step of the process 
+    </p>
+    <img class="userJourney" src="/image/user_journey.drawio.png">
 </section>
 <!-- User Flow Diagram -->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+    <h2>User Flow Diagram </h2>
+    <p>The user flow diagram demonstrates the main steps needed for the user to play the games provided by the application as well as the internal functionalities for compiling their scores.
+    </p>
+    <img class="flowDiagram" src="/image/diagram.png">
 </section>
-<!-- Sketches  -->
+<!-- Sketches -->
 <section>
-    <h2>Main Content Area</h2>
+    <h2>Sketches</h2>
     <p>This is where your main content will go.</p>
+    <img src="/image/Sketches.png" >
 </section>
 <!-- Wireframes -->
 <section>
-    <h2>Main Content Area</h2>
+    <h2>Wireframes</h2>
     <p>This is where your main content will go.</p>
+    <img src="/image/Wireframes.drawio.png" >
 </section>
-<!-- Inspiration Board -->
+<!-- Insparation Board -->
 <section>
-    <h2>Main Content Area</h2>
+    <h2>Inspiration Board</h2>
     <p>This is where your main content will go.</p>
 </section>
 <!-- Typography -->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+    <h2>Typography</h2>
+    <img src="/image/typo.png" >
+    <p>Choosing Verdana as the font for an app aimed at older people, especially for a user benchmark app, has several advantages. Verdana is highly readable, even at smaller sizes, due to its simple and clear design. This is crucial for older users, many of whom may have age-related vision changes that affect their ability to read small text. Additionally, Verdana was specifically designed for on-screen legibility, with a large x-height (the height of lowercase letters) and wide letter spacing, making it easier to read on digital screens. This is important as older users may be using the app on smartphones, tablets, or computers. The font's design also improves accessibility for users with visual impairments or other disabilities. Verdana's familiarity, as a widely used font, can make the app feel more comfortable and intuitive to use for older users. Using Verdana throughout the app ensures a consistent and coherent design, which can improve overall usability and user experience, particularly for older users who may prefer clear, predictable interfaces. Lastly, Verdana supports a wide range of languages and characters, making it suitable for use in an app that may be used by older people from different regions or language backgrounds.
+    </p>
 </section>
 <!-- Naming and Logo -->
 <section>
-    <h2>Main Content Area</h2>
-    <p>This is where your main content will go.</p>
+    <h2>Naming and Logo</h2>
+    <img src="/image/logo.png" >
+    <p>"Senior Work Bench" was likely chosen for its clear and direct representation of the app's purpose, focusing on providing a platform tailored for older individuals to work on cognitive tasks or benchmarks. The inclusion of "Senior" suggests a focus on addressing the specific needs and preferences of older users. Meanwhile, "Work Bench" conveys a sense of productivity and activity, indicating that the app offers a space for seniors to actively engage in cognitive exercises. The color scheme of black and light blue further enhances this impression, with black symbolizing professionalism, sophistication, and clarity, and light blue evoking calmness, tranquility, and mental focus. Together, these elements suggest a professional, trustworthy, and focused app designed to support seniors in their cognitive endeavors.
+    </p>
 </section>
 <!-- The Final Prototype -->
 <section>
     <h2>Main Content Area</h2>
     <p>This is where your main content will go.</p>
 </section>
-<!-- Conclusion -->
+<!-- conclusion -->
 <section>
     <h2>Main Content Area</h2>
     <p>This is where your main content will go.</p>
